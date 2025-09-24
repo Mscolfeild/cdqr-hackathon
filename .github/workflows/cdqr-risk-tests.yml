@@ -29,7 +29,7 @@ jobs:
           echo "== listele tools klasörü ==" 
           ls -l tools/ || true
           echo "== risk.py çalıştır ==" 
-          python tools/risk.py || true
+          python cdqr_hackathon_repo/tools/risk.py || true
           echo "dummy result" > risk_issue.md
           cat risk_issue.md
 
