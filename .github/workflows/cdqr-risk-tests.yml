@@ -30,7 +30,7 @@ jobs:
           ls -l cdqr_hackathon_repo/tools/ || true
           echo "== risk.py çalıştır ==" 
           python cdqr_hackathon_repo/tools/risk.py || true
-          echo "dummy result" > risk_issue.md
+          python cdqr_hackathon_repo/tools/risk.py --base "origin/${{ github.base_ref }}" --head "HEAD" --out risk.json --md risk_issue.md
           cat risk_issue.md
 
       - name: Create Issue
