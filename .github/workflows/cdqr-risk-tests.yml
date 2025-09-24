@@ -27,7 +27,7 @@ jobs:
         run: |
           pip install pygments
           echo "== listele tools klasörü ==" 
-          ls -l tools/ || true
+          ls -l cdqr_hackathon_repo/tools/ || true
           echo "== risk.py çalıştır ==" 
           python cdqr_hackathon_repo/tools/risk.py || true
           echo "dummy result" > risk_issue.md
