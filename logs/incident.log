@@ -1,0 +1,3 @@
+2025-09-24 12:01:23 ERROR c.e.OrderService - java.lang.NullPointerException: order is null
+ at com.example.OrderService.calculateTotal(OrderService.java:8)
+ at com.example.CheckoutController.pay(CheckoutController.java:27)
